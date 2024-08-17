@@ -10,13 +10,11 @@ export class ResourceTile {
 
   // adds a resource to this tile or updates amount of existing resource type
   public addResource(resource: Resource): void {
-    if (this.resource.some((r) => r.type === resource.type)) {
-      const existingResource = this.resource.find((r) => r.type === resource.type);
-      if (existingResource) {
-        existingResource.amount += resource.amount;
-      }
-    } else {
+    const existingResource = this.resource.find((r) => r.type === resource.type);
+    if (existingResource === undefined) {
       this.resource.push(resource);
+    } else {
+      existingResource.amount += resource.amount;
     }
   }
 

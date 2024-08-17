@@ -1,6 +1,6 @@
 {
   "name": "@ziagl/tiled-map-resources",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A library to handle resources of tiled based game maps.",
   "author": "Werner Ziegelwanger (ziagl)",
   "license": "GNU LESSER GENERAL PUBLIC LICENSE",
